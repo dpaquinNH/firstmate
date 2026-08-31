@@ -1,0 +1,13 @@
+== pre-fix-base-4ad4cba: /tmp/fm-jq-evidence/base-tree/bin/fm-bootstrap.sh (default tmux backend, jq absent) ==
+(no output - bootstrap was SILENT)
+exit code: 0
+
+== post-fix-branch: /Users/dan/.no-mistakes/worktrees/b4bc0d7d7bd7/01M1CHMNQ2T646BJ3ZT9ADS59K/bin/fm-bootstrap.sh (default tmux backend, jq absent) ==
+MISSING: jq (install: brew install jq  # or the platform's package manager)
+exit code: 0
+
+
+== post-fix dedup check: JSON backends report missing jq exactly once ==
+backend=herdr MISSING-jq-lines=1
+backend=zellij MISSING-jq-lines=1
+backend=cmux MISSING-jq-lines=1
