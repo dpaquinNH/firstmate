@@ -298,7 +298,7 @@ $INBOX_SECTION
 
 # Escalation to main firstmate
 Handle routine work yourself.
-Report only true captain-relevant outcomes or a declared external wait by appending one line:
+Report only true captain-relevant outcomes or a declared wait by appending one line:
    \`echo "{state}: {one short line}" >> $STATUS_FILE\`
 States: working, needs-decision, blocked, $PAUSED_VERB, done, failed.
 Use \`$PAUSED_VERB: {what you are waiting on, rough duration}\` (distinct from \`blocked:\`) whenever your domain deliberately idles, on a known external wait you expect to clear on its own or on a long job you launched yourself, naming when it clears with \`until <YYYY-MM-DDTHH:MMZ>\` (UTC) when you know; use \`blocked:\` when you are stuck and need firstmate to act.

@@ -640,8 +640,8 @@ test_secondmate_marked_request_reporting_contract() {
     "secondmate charter lost terse result reporting"
   assert_grep 'append a status line that points to that doc' "$brief" \
     "secondmate charter lost detailed document pointers"
-  assert_grep 'Report only true captain-relevant outcomes or a declared external wait' "$brief" \
-    "secondmate charter lost declared external waits"
+  assert_grep 'Report only true captain-relevant outcomes or a declared wait by appending one line' "$brief" \
+    "secondmate charter lost declared waits"
   assert_grep 'a captain decision, a real blocker, a failure, work ready for review, or work you landed' "$brief" \
     "secondmate charter lost decisions, blockers, failures, ready outcomes, or landed work"
   # Under standing merge authority nothing is ever "ready for review", so the
